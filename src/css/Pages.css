@@ -1,0 +1,51 @@
+.out-box {
+  /* text-decoration: underline; */
+  padding-top: 60px;
+  border: solid 15px crimson;
+  width: 500px;
+  height: 800px;
+  text-align: center;
+}
+
+.out-box .title {
+  color: crimson;
+  font-size: 60px;
+  padding-bottom: 50px;
+}
+
+.out-box .input {
+  width: 50%;
+  height: 50px;
+  padding: 8px 8px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  font-size: 26px;
+}
+
+.out-box .input:focus {
+  border: solid 5px #6bca6b;
+  height: 50px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+}
+
+.out-box .start {
+  background-color: yellowgreen;
+  border-color: rgb(112, 187, 110);
+  border: solid;
+  font-size: 30px;
+  color: aliceblue;
+  width: 30%;
+  height: 50px;
+}
+.out-box .start:hover {
+  transform: translate(0);
+  opacity: 1;
+  max-width: 100em;
+}
+
+.out-box .select {
+  width: 50%;
+  height: 50px;
+}

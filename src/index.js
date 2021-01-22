@@ -1,13 +1,27 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import { Provider } from "mobx-react";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
+// import RootStore from "Stores";
+// import ls from 'local-storage';
+// import * as serviceWorker from "./serviceWorker";
+
+import RootStore from "./Stores/index";
+const store = new RootStore();
 
 ReactDOM.render(
-  <React.StrictMode>
+  // <React.StrictMode>
+  //   <App />
+  // </React.StrictMode>,
+  // document.getElementById("root")
+
+  <Provider {...store}>
+    {/*<React.StrictMode>*/}
     <App />
-  </React.StrictMode>,
-  document.getElementById("root")
+    {/*</React.StrictMode>*/}
+  </Provider>,
+  document.querySelector("#root")
 );
 
 // If you want to start measuring performance in your app, pass a function
